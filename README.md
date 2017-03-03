@@ -6,3 +6,5 @@
 [面试 | Java线程](https://github.com/jasonLYF/ShareInterview/blob/master/%E9%9D%A2%E8%AF%95-Java%E7%BA%BF%E7%A8%8B.md)
 
 [面试 | Java基础 包括集合和线程](https://github.com/jasonLYF/ShareInterview/blob/master/%E9%9D%A2%E8%AF%95-Java%E5%9F%BA%E7%A1%80.md)
+
+[面试 | Android四大组件](https://github.com/jasonLYF/ShareInterview/blob/master/%E9%9D%A2%E8%AF%95-Android%E5%9B%9B%E5%A4%A7%E7%BB%84%E4%BB%B6.md)
