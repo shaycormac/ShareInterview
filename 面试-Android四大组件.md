@@ -61,7 +61,12 @@ public class AllAppActivity extends AppCompatActivity {
 }
 ```
 
-######8、如果Activity A的启动模式是SingleTask，跳转到Activity B 且返回值传给A ，要怎么处理？   *  Activity A使用了SingleTask模式在执行界面跳转的时候，多次启动此Activity都不会被重新创建，所以可能不会接收到传过来的Bundle里面的值，这样就导致传统的方法是接受不到返回值的。*  singleTask模式下，系统会回调onNewIntent()方法，在这个方法中可以调用 setIntent(intent);  这样就可以拿到Activity B跳到Activity A使用的Intent，从而拿到返回数据
+######8、如果Activity A的启动模式是SingleTask，跳转到Activity B 且返回值传给A ，要怎么处理？
+* Activity A使用了SingleTask模式在执行界面跳转的时候，多次启动此Activity都不会被重新创建，所以可能不会接收到传过来的Bundle里面的值，这样就导致传统的方法是接受不到返回值的。
+* singleTask模式下，系统会回调onNewIntent()方法，在这个方法中可以调用 setIntent(intent);  这样就可以拿到Activity B跳到Activity A使用的Intent，从而拿到返回数据
+
+######13、你知道onNewIntent吗？ 
+如果IntentActivity处于任务栈的顶端，也就是说之前打开过的Activity，现在处于onPause、onStop 状态的话，其他应用再发送Intent的话，执行顺序为： onNewIntent，onRestart，onStart，onResume。
 
 ######9、Activity的启动模式？
 * standard：标准模式；这也是系统默认的模式。每次启动一个Activity都会重新创建一个新的实例，不管这个实例是否存在。
@@ -100,8 +105,6 @@ startIntent(intent);
 ######12、如何将一个 Activity 设置成窗口的样式？ 
 只需要给我们的 Activity 配置如下属性即可`android:theme="@android:style/Theme.Dialog"` 
 
-######13、你知道onNewIntent吗？ 
-如果IntentActivity处于任务栈的顶端，也就是说之前打开过的Activity，现在处于onPause、onStop 状态的话，其他应用再发送Intent的话，执行顺序为： onNewIntent，onRestart，onStart，onResume。
 
 ######14、如何获取当前屏幕Activity的对象？ 
 使用ActivityLifecycleCallbacks 
