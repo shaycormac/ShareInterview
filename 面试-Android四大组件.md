@@ -61,7 +61,7 @@ public class AllAppActivity extends AppCompatActivity {
 }
 ```
 
-######8、如果Activity A的启动模式是SingleTask，跳转到Activity B 且返回值传给A ，要怎么处理？
+######8、如果Activity A的启动模式是SingleTask，跳转到Activity B 且返回值传给A ，要怎么处理？   *  Activity A使用了SingleTask模式在执行界面跳转的时候，多次启动此Activity都不会被重新创建，所以可能不会接收到传过来的Bundle里面的值，这样就导致传统的方法是接受不到返回值的。*  singleTask模式下，系统会回调onNewIntent()方法，在这个方法中可以调用 setIntent(intent);  这样就可以拿到Activity B跳到Activity A使用的Intent，从而拿到返回数据
 
 ######9、Activity的启动模式？
 * standard：标准模式；这也是系统默认的模式。每次启动一个Activity都会重新创建一个新的实例，不管这个实例是否存在。
