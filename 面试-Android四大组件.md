@@ -270,4 +270,14 @@ Android提供了ContentResolver，外界的程序可以通过ContentResolver接�
 * Content Provider：内容提供器，android应用程序能够将它们的数据保存到文件、SQLite数据库中，甚至是任何有效的设备中。当你想将你的应用数据和其他应用共享时，内容提供器就可以发挥作用了。
 * Service：服务，具有一段较长生命周期且没有用户界面的程序。
 
+######41、Android数据存储方式？
+* SharedPreferences
+以键值对的形式保存少量的数据，且这些数据的格式非常简单：字符串型、基本类型的值。
+[更多SharedPreferences面试问题·请参考](https://github.com/jasonLYF/ShareInterview/blob/master/%E9%9D%A2%E8%AF%95-SharedPreferences.md)
+* 文件存储数据
+Context提供了两个方法来打开数据文件里的文件IO流 FileInputStream openFileInput(String name); FileOutputStream(String name , int mode),这两个方法第一个参数 用于指定文件名，第二个参数指定打开文件的模式;文件默认存储位置：/data/data/包名/files/文件名。
+* SQLite存储数据
+* 使用ContentProvider存储数据
+* 网络存储数据
+
 ![0.jpg](http://upload-images.jianshu.io/upload_images/1479978-0ff1a43230b41689.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
