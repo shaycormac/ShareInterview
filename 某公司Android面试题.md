@@ -1,4 +1,5 @@
 
+
 #### 1、请写出 Object 类中的方法有哪些？
 [java.lang.Object 请查看源码：](https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html)   
 https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html
@@ -224,8 +225,8 @@ TextView，ImageView， 看源码：
 
 #### 11、清除缓存 和 清理数据 的区别？
 清除缓存：   
-缓存是应用在运行过程中产生的一些临时数据，清理后应用再次运行的时候会感觉“稍慢”，那是因为它重新从网络拉取数据，清理缓存后手机的运行内存增大；
-清理数据： 
+缓存是应用在运行过程中产生的一些临时数据，清理后应用再次运行的时候会感觉“稍慢”，那是因为它重新从网络拉取数据，清理缓存后手机的运行内存增大；   
+清理数据：   
 对用户来说就是清除一些用户信息，比如登录信息、进度保存信息等，清理之后，再次运行对应的App，比如微信，则需要重新输入登录信息；而对于开发者来说就是清理一些配置信息，比如SharedPreferences、数据库等；
 
 #### 12、什么是ANR?怎么避免？
@@ -242,3 +243,6 @@ Application Not Responding，即应用无响应；
 
 #### 14、将字符串"This is Android"传换成"AndroidisThis",不能用split；
 我不想写了，你们来写吧：）
+
+
+![](http://upload-images.jianshu.io/upload_images/1479978-0ff1a43230b41689.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
